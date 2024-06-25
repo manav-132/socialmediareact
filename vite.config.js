@@ -8,6 +8,11 @@ export default defineConfig({
       'process.env': JSON.stringify(process.env),
     }),
   ],
+  build: {
+    rollupOptions: {
+      external: ["@material-ui/icons"]
+    }
+  }
 })
 
 
