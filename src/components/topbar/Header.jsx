@@ -15,7 +15,7 @@ function Header() {
      const responce= await axios.get(`https://socialmediabackend-la58.onrender.com/api/users/search/${search}`)
      if(responce.data.exists){
       console.log(responce.data.exists)
-      window.location.href = `http://localhost:5173/profile/${search}`
+      window.location.href = `https://main--socialhappy.netlify.app/profile/${search}`
      }
     } catch (e) {
       console.log(e)
